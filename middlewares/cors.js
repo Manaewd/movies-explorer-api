@@ -1,5 +1,7 @@
 // Массив доменов, с которых разрешены кросс-доменные запросы
 const allowedCors = [
+  'https://manaewdiploma.nomoredomains.xyz',
+  'http://manaewdiploma.nomoredomains.xyz',
   'https://localhost:3001',
   'http://localhost:3001',
 ];
