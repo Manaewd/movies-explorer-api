@@ -2,6 +2,9 @@
 const allowedCors = [
   'https://manaewdiploma.nomoredomains.xyz',
   'http://manaewdiploma.nomoredomains.xyz',
+  'localhost:3000',
+  'http://localhost:3000',
+  'https://localhost:3000',
   'https://localhost:3001',
   'http://localhost:3001',
 ];

@@ -26,12 +26,12 @@ const getUserInfo = (req, res, next) => {
 
 const createUser = (req, res, next) => {
   const {
-    name, about, avatar, email, password,
+    name, email, password,
   } = req.body;
   bcrypt.hash(String(password), 10)
     .then((hash) => {
       User.create({
-        name, about, avatar, email, password: hash,
+        name, email, password: hash,
       })
         .then((user) => res.status(201).send({ data: user.toJSON() }))
 
